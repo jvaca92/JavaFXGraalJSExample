@@ -13,8 +13,8 @@
       }
    </fx:script>
    <children>
-      <Button fx:id="btnMessage" layoutX="249.0" onAction="printMessage()" layoutY="281.0" mnemonicParsing="false" text="Print message" />
-      <Label fx:id="lbMsg" layoutX="268.0" layoutY="206.0">
+      <Button fx:id="btnMessage" layoutX="249.0" layoutY="281.0" mnemonicParsing="false" onAction="printMessage()" text="Print message" />
+      <Label fx:id="lbMsg" layoutX="38.0" layoutY="200.0">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
