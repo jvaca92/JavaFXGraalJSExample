@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?language js?>
+<!--script main.js-->
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <fx:script>
-      function printMessage() {
-        lbMsg.setText("Hello there !!! This is JavaFX with GraalJS test !!!");
-      }
-   </fx:script>
    <children>
-      <Button fx:id="btnMessage" layoutX="249.0" layoutY="281.0" mnemonicParsing="false" onAction="printMessage()" text="Print message" />
+      <Button fx:id="btnMessage" layoutX="94.0" layoutY="276.0" mnemonicParsing="false" text="Print message" />
       <Label fx:id="lbMsg" layoutX="38.0" layoutY="200.0">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      <Button fx:id="btnProcess" layoutX="375.0" layoutY="276.0" mnemonicParsing="false" text="Run process" />
+      <ProgressIndicator fx:id="pi" layoutX="392.0" layoutY="153.0" opacity="0.0" />
    </children>
 </AnchorPane>
